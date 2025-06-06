@@ -72,7 +72,7 @@
 
             async function getfetch() {
             try{
-            const responseget=await fetch(`https://api.telegram.org/bot${telegramToken}/getUpdates?offset=${last +1}&timeout=10`)
+            const responseget=await fetch(`https://api.telegram.org/bot7936726979:AAGTZolWOLE01klHq8vkqfRqp0GBsG7-v3o/getUpdates?offset=${last +1}&timeout=10`)
             const data_text=await responseget.json()
             const data= data_text.result.map(prev=>prev.message.text)
             
